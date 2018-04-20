@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spin The Moose</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script src="test.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <div class="stall">
+    <div class="parent left grid-container grid-x">
+      <div class="cell small-6">
+        <h1 style="padding-bottom:10px;">Summer Camp Canada</h1>
+        <!-- <div class="right"> -->
+      </div>
+    <div class="right">
+      <div class="cell small-6">
+        <h2>Call Now on 0151 7026808</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button id="spin" onClick="popup();" type="button" style="float:left;">Click to spin the moose!</button>
+  </div>
+
+    <!--The board that displays the prizes-->
+    <img class="spinner" align="center" src="Images/Spinner.png" alt="Spinner">
+    <img id="moose" class="moose" src="Images/moose3.png" alt="moose">
+
+ <div id="speech" class="speech" hidden>
+   <svg height="200" width="400">
+    <polygon class="triangle" style="position:relative;left:50px;" points="8,30 70,90 80,40"/>
+    <ellipse class="circle" cx="150" cy="80" rx="100" ry="60"/>
+  </svg>
+ </div>
+ <div id="bubble" style="position:relative;left:calc(74%);top:calc(38%);display:none;" >
+   <p>Congratulations!</p>
+   <p>You have won </p>
+   <p id="prizes" style="text-align:center;"></p>
+ </div>
+
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <!--Form inside the modal box that the user fills in their details, before they
+          can spin the moose. When the form is submitted, the spin function is then ran.-->
+          <form action="#" id="contact" data-parsley-validate="" onsubmit="spin()">
+            <p style="font-size:20px;text-align:center;">Please enter your details to spin the moose and win a prize!</p>
+            <!--The fields the user has to fill in (Full name, phone number and email address).-->
+            <div class="modaltext">
+              Full Name:<br>
+              <input type="text" name="fullname" required>
+              <br><br>
+              Phone Number:<br>
+              <input type="tel" name="phonenumber" required>
+              <br><br>
+              Email Address:<br>
+              <input type="email" name="email" required>
+              <br><br>
+            </div>
+            <!-- <button id="spin2" class="submit" type="submit">Submit</button> -->
+            <input id="spin2" class="submit" onClick="speechBubble();" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

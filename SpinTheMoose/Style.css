@@ -1,0 +1,328 @@
+.row {
+    width: 100%;
+    max-width: 62rem;
+    margin: 0 auto;
+}
+
+html{
+  font-family: 'proxima-nova', sans-serif;
+  /* color:white; */
+}
+
+/* body {
+  max-height:500px;
+  background-size: contain;
+} */
+
+.stall {
+  width: 100%;
+  height: 500px;
+  /* background-color: blue; */
+  background-image: url("Images/stall.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: 100% 100%; */
+  /* width: 80%; */
+  /* width:1356px; */
+  /* height:500px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  /* background-size:contain;
+  background-position:center; */
+}
+
+/* img {
+  max-width: 100%;
+  height:auto;
+} */
+
+
+h1 {
+   text-align: center;
+   /* top:30px; */
+   /* margin-bottom:5px; */
+   color:white;
+   font-size: 2vw;
+}
+
+h2 {
+   text-align: right;
+    color: white;
+    font-size: 1.5vw;
+}
+
+h3 {
+   text-align: right;
+   /* margin-top: 1.14286rem;
+   margin-right: 1.42857rem; */
+   color: white;
+   font-size: 1.5vw;
+}
+
+
+/* .spinner {
+  height: 280px;
+  left: calc(50% - 120px);
+  margin-top: 100px;
+} */
+
+button {
+  position: absolute;
+  left: calc(50% - 115px);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color:#0066ff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #0047b3}
+
+button:active {
+  background-color: #0047b3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+  position: relative;
+  left: calc(50% - 290px);
+  top: calc(25%);
+}
+
+img.spinner {
+  /* margin-top: 70px; */
+  height: 280px;
+  position: absolute;
+  /* top: 20%; */
+  left: calc(38% );
+  margin-top: calc(7%);
+  /* left: calc(59%); */
+}
+img.moose {
+  max-height:130px;
+  max-width:150px;
+  /* width:auto; */
+  position: absolute;
+  margin-top: calc(11%);
+  left: calc(44% );
+}
+
+div{
+  /* background-image:  url("Spinner.png"); */
+  /* height: 100px; */
+   width: 100px;
+  /* background-color: yellow; */
+}
+
+
+ .triangle {
+  fill: #F4A6BC;
+  left: 50px;
+  /* stroke-width:3; */
+  /* stroke:black; */
+}
+
+.circle {
+  fill: #F4A6BC;
+/*   stroke-width:3;
+  stroke:black; */
+  float: right;
+}
+
+.speech {
+  position: fixed;
+  right: calc(26%);
+  top: calc(37%);
+  /* width: 5px; */
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; /* Enable scroll if needed */ */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #FCEB60;
+    font-family: 'proxima-nova', sans-serif;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+
+.modaltext {
+  font-size: 16px;
+  margin-left: 37%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.submit {
+  position: relative;
+  left: calc(50% - 50px);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color:#0066ff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.submit:hover {background-color: #0047b3}
+
+.submit:active {
+  background-color: #0047b3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    width:100%;
+
+}
+
+.parent > div {
+        flex: 1;
+    }
+
+    .grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cell {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+/**
+ * Classes that implement the horizontal grid
+ */
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+.grid-x > .cell {
+    margin: 0 0.5rem;
+}
+
+/**
+ * Classes that implement the vertical grid
+ */
+.grid-y {
+    display:flex;
+    flex-flow: column nowrap;
+}
+.grid-y > .cell {
+    margin: 0.5rem 0;
+}
+
+/**
+ * Classes that implement the cell sizes
+ */
+.cell.small-auto {
+    flex: 1 0 auto;
+    width: auto;
+}
+.cell.small-shrink {
+    flex: 0 0 auto;
+    width: auto;
+}
+@media(max-width: 640px) {
+    .cell.small-hidden {
+        display: none;
+    }
+}
+.cell.small-1 {
+    width: calc(8.3333% - 1rem);
+}
+.cell.small-2 {
+    width: calc(16.6666% - 1rem);
+}
+.cell.small-3 {
+    width: calc(25% - 1rem);
+}
+.cell.small-4 {
+    width: calc(33.3333% - 1rem);
+}
+.cell.small-5 {
+    width: calc(41.6666% - 1rem);
+}
+.cell.small-6 {
+    width: calc(50% - 1rem);
+}
+.cell.small-7 {
+    width: calc(58.3333% - 1rem);
+}
+.cell.small-8 {
+    width: calc(66.6666% - 1rem);
+}
+.cell.small-9 {
+    width: calc(75% - 1rem);
+}
+.cell.small-10 {
+    width: calc(83.3333% - 1rem);
+}
+.cell.small-11 {
+    width: calc(91.6666% - 1rem);
+}
+.cell.small-12 {
+    width: calc(100% - 1rem);
+}
