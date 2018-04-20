@@ -1,0 +1,77 @@
+
+/*
+This adds styling to the whole document, so it makes all the font sans-serif,
+ the background colour is purple and the font is white.
+*/
+html {
+  font-family: sans-serif;
+  background-color: #3B274A;
+  color:white;
+}
+
+
+/*
+This adds the styling to the button on the bookmark page.
+It is what makes the button round, red and with white font.
+*/
+button {
+  display: inline-block;
+  padding: 50px;
+  font-size: 28px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 6px #999;
+  margin-left:40%;
+  margin-top: 5%;
+  margin-bottom:5%;
+}
+
+/*This adds the styling to the button when it is hovered over. It changes the button colour to a darker red.*/
+button:hover {
+  background-color: #D80000;
+}
+
+/*This adds the styling to when the button is being clicked. It goes to a darker red
+ and adds a shadow to it to make the button look like a button being clicked.*/
+button:active {
+  background-color:	#A80000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*This is the styling for the title and aligns it to the center of the page.*/
+h1 {
+   text-align:center;
+}
+
+/*This is the styling for the paragraph tags, it aligns it to the cneter and add a line height to make it easier to read.*/
+P {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*This is the styling for the links. It removes the underline from them.*/
+a{
+  text-decoration: none;
+}
+
+/*This is the styling for the footer. It floats it left and sets the position as relative.*/
+footer {
+  float:left;
+  position:relative;
+}
+
+/*This is the styling for the copyright class.
+It sets the position as fixed, aligns the text to the left and sets the bottom as 0 so that it is pushed to the bottom of the page.*/
+.copyright {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  text-align: left;
+}

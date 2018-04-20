@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--This is the jQuery script which is taken from Google apis. -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!--This is the accessibility bookmark script-->
+  <script src="https://gifted-sammet-4ea55f.netlify.com/AccessibilityBookmarklet.js"></script>
+  <link rel="stylesheet" type="text/css" href="BookmarkStyle.css">
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+</header>
+<!-- This is the title for the page -->
+<h1>Accessibility Checker Bookmark</h1>
+
+<!-- This is the introduction and explanation of what this page contains and how the user will use the framework -->
+<p>This is the Accessibility Checker Bookmark, designed to test the accessibility within a webpage.
+  <br> If you're using Google Chrome, drag the big red button below into your bookmarks. If you have clicked the button
+  already, you may need to refresh the page before you can drag the button anywhere.
+<br> To use with Firefox, right click on the button and select bookmark this link. Then on the page of your choosing,
+go to your bookmarks and select the accessibility checker.</p>
+
+<!-- This is the button that contains the framework.
+When the button is clicked, it runs the javascript for the framework.
+The button is set to only be clicked once so that the framework is not produced multiple times at once.  -->
+  <div>
+    <a href="javascript:(function(){var script=document.createElement('SCRIPT');script.src='https://gifted-sammet-4ea55f.netlify.com/AccessibilityBookmarklet.js';document.body.appendChild(script);})()">
+      <button type="button" onClick="this.disabled = true;">Accessibility<br> Checker</button>
+    </a>
+  </div>
+
+  <!--This is the footer of the page, which contains the copyright.-->
+<footer>
+  <p class="copyright">&copy;Samantha Crosby 2018</p>
+</footer>
+
+</body>
+</html>
