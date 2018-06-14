@@ -1,0 +1,408 @@
+//This adds margin and padding 0 to everything to prevent gaps between the elements and the sides of the page
+// * {
+
+  //This is the styling added to all of the html
+html{
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  line-height: 1.5;
+
+  //This is the styling added to all of the p tags
+  p {
+    text-align: center;
+  }
+  //This is the wrapper class used to push the footer to the bottom
+.wrapper {
+  //This is the styling for the header
+  header{
+    background-color:	#FAE7E9;
+    color: white;
+    height: 150px;
+    .parent {
+      display: flex;
+      align-items: center;
+      width:100%;
+      .logo {
+        display:block;
+        width:300px;
+        padding-top: 30px;
+      }
+
+    //This is the styling for the ul tags
+    .parent{
+      .cell{
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* background-color: #D1142F; */
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: -17px;
+      //This floats the list items to the right
+      li {
+        float: right;
+      }
+      //This is the styling for the list items links
+      li a {
+        display: block;
+        font-weight: bold;
+        color: #D1142F;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        border: solid transparent;
+        font-size: 18px;
+      }
+      //This is the styling for the links when they are hovered over
+      li a:hover {
+        border-style: solid;
+        border-color: #D1142F;
+      }
+      //This is the styling for the list items in the header
+    header li {
+      list-style-type: none;
+      display: inline;
+      color: white;
+    }
+  }
+  //This is the styling for the parent class
+    .parent {
+      display: flex;
+      align-items: center;
+      width:100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-flow: row wrap;
+      //This is the styling for the logo
+      .logo {
+        max-width:300px;
+      }
+    }
+    //This is the styling for the parent class
+    .parent {
+      display: flex;
+      align-items: center;
+      width:100%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media(max-width: 640px) {
+        //This is the styling for the cell class
+          .cell {
+            //This is the styling for the element on small, it hides it
+            .small-hidden {
+              display: none;
+              .topnav {
+                //This is the styling for the icon class
+                .icon {
+                  display: none;
+                }
+              }
+          }
+    }
+
+  }
+}
+}
+}}
+}
+//This is the styling for the bounce back to the top of the page button
+.bounce {
+  float:right;
+  position: fixed;
+  display:block;
+  border: none;
+  color:white;
+  font-size: 20px;
+  padding:10px 10px;
+  background-color: #D1142F;
+  cursor: pointer;
+}
+//This is the styling for the parent class
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  //This is the styling for the cell class
+    .cell {
+
+      flex: 0 0 auto;
+      box-sizing: border-box;
+      //This sets the width of the element to be the width of the screen on small
+      .small-11 {
+        width: calc(91.6666% - 1rem);
+        //This is the styling for the title class
+        .title {
+          padding-top:100px;
+          text-align:center;
+          color: #D1142F;
+          font-size: 28px;
+          padding-bottom: 10px;
+        }
+
+      }
+    }
+}
+//This is the styling for the parent class
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  //This is the styling for the cell class
+  .cell {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    //This sets the width of the element to be the width of the screen on small
+    .small-11 {
+      width: calc(91.6666% - 1rem);
+      .title {
+        padding-top:100px;
+        text-align:center;
+        color: #D1142F;
+        font-size: 28px;
+        padding-bottom: 10px;
+      }
+      //This is the styling for the buttons
+      .button {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border: none;
+        color:white;
+        background-color: #D1142F;
+        padding:15px 30px;
+        font-size: 20px;
+        radius:5px;
+        cursor: pointer;
+      }
+      //This is the styling for the button when it is hovered over.
+      .button:hover {
+        box-shadow: 0 10px 14px 0 darkgrey,0 10px 30px 0 darkgrey;
+      }
+    }
+  }
+}
+//This is the styling for the parent class
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  //This is the styling for the cell class
+  .cell {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    //This sets the width of the element to be the width of the screen on small
+    .small-11 {
+      width: calc(91.6666% - 1rem);
+      .title {
+        padding-top:100px;
+        text-align:center;
+        color: #D1142F;
+        font-size: 28px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+//This is the styling for the parent class
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  //This is the styling for the organisers section
+  .organisers {
+    position:relative;
+    height:auto;
+    top:30px;
+    transition-property: top;
+    transition-duration: 2s;
+    //This is the styling for the organisers images
+    .organisers img {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+    }
+    //This is the styling for the test class
+    .test {
+      margin: auto;
+          width: 50%;
+          padding: 10px;
+          //This is the styling that creates the red ruby behind the images to look like a border
+      .clip {
+        display:inline-block;
+        position: relative;
+        width: 180px;
+        height: 150px;
+        background-color: #D1142F;
+        box-sizing: border-box;
+        clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+        //This makes the red background jump up when it is hovered over
+        .clip:hover {
+          top:-5px;
+        }
+        //This is the styling for the cell class
+        .cell {
+          flex: 0 0 auto;
+          box-sizing: border-box;
+          //This sets the width of the element to be the width of the screen on small
+          .small-12 {
+            width: calc(100% - 1rem);
+            //This creates the ruby shape with the images of the organisers
+            .clip img {
+              position: absolute;
+              top: 5px;
+              left: 10px;
+              width: 116px;
+              height: 117px;
+              clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+            }
+          }
+        }
+      }
+      //This is the styling that creates the red ruby behind the images to look like a border
+      .clip {
+        display:inline-block;
+        position: relative;
+        width: 180px;
+        height: 150px;
+        background-color: #D1142F;
+        box-sizing: border-box;
+        clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+        //This is the styling for the cell class
+        .cell {
+          flex: 0 0 auto;
+          box-sizing: border-box;
+          //This sets the width of the element to be the width of the screen on small
+          .small-12 {
+            width: calc(100% - 1rem);
+            //This creates the ruby shape with the images of the organisers
+            .clip img {
+              position: absolute;
+              top: 5px;
+              left: 10px;
+              width: 116px;
+              height: 117px;
+              clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+            }
+          }
+        }
+      }
+      //This is the styling that creates the red ruby behind the images to look like a border
+      .clip {
+        display:inline-block;
+        position: relative;
+        width: 180px;
+        height: 150px;
+        background-color: #D1142F;
+        box-sizing: border-box;
+        clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+        //This is the styling for the cell class
+        .cell {
+          flex: 0 0 auto;
+          box-sizing: border-box;
+          //This sets the width of the element to be the width of the screen on small
+          .small-12 {
+            width: calc(100% - 1rem);
+            //This creates the ruby shape with the images of the organisers
+            .clip img {
+              position: absolute;
+              top: 5px;
+              left: 10px;
+              width: 116px;
+              height: 117px;
+              clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//This pushes the footer to the bottom of the page
+.push {
+height: 50px;
+}
+//This is the styling for the footer
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #D1142F;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  //This is the styling for the cleversteam logo
+  .cleversteam {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height:80px;
+  }
+  //This is the styling for the footer links
+  footer a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: solid transparent;
+  }
+  //This is the styling for the parent class
+  .parent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    //This is the styling for the cell class
+    .cell {
+      flex: 0 0 auto;
+      box-sizing: border-box;
+      //This sets the width of the element to be half the width of the screen on mobile
+      .small-6 {
+        width: calc(50% - 1rem);
+        //This is the styling for the icons
+        .icons {
+          display:inline;
+          margin-left: auto;
+          margin-right: auto;
+          //This is the styling for the slack icon
+          .slack {
+            height:70px;
+            width:70px;
+            float: right;
+          }
+        }
+      }
+      //This is the styling for the cell class
+      .cell {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        //This sets the width of the element to be half the width of the screen on mobile
+        .small-6 {
+          width: calc(50% - 1rem);
+          //This is the styling for the twitter icon
+          .twitter {
+            height:35px;
+            width:35px;
+            float: left;
+          }
+        }
+
+      }
+    }
+  }
+}
+}
+}
+// }
