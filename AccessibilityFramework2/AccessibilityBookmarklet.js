@@ -1,7 +1,7 @@
 
 /**
 Some websites did not work with the framework because they did not have
-the jQuery. To fix this a script was created in each of the websites
+the jQuery script. To fix this a script was created in each of the websites
 this framework is used on. It retrieves the head, creates the tag and
  prepends the script to the head tag. 
 */
